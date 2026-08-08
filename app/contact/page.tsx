@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Button from '../components/button/page'
+
+export const metadata = {
+    title:"Lamania contact info",
+    description:"Lamania contact description"
+}
+
 export default function Contact(){
     return (
         <div className={styles.container}>
