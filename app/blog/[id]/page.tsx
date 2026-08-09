@@ -24,7 +24,7 @@ export async function generateMetadata({
 }
 
 async function getData(id: string) {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/${id}`, {
+  const res = await fetch(`https://brain-wave-1p6y.vercel.app/api/posts/${id}`, {
     cache: "no-store",
   });
   if (!res.ok) {

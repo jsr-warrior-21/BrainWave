@@ -14,7 +14,7 @@ type Post = {
 };
 
 async function getData() {
-  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts`, { cache: "no-store" });
+  const res = await fetch(`https://brain-wave-1p6y.vercel.app/api/posts`, { cache: "no-store" });
   if (!res.ok) {
     throw new Error("Failed to fetch data.");
   }
